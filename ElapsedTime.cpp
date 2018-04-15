@@ -21,7 +21,7 @@ bool ElapsedTime::chk()
 }
 void ElapsedTime::ud()
 {
-  if(!elapsed_) elapsed_ = millis() - prevTimeMS_ > intervalMS_ ? true : false;
+  if(!elapsed_) elapsed_ = millis() - prevTimeMS_ >= intervalMS_ ? true : false;
 }
 void ElapsedTime::rst()
 {

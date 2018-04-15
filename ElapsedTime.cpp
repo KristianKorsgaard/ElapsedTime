@@ -28,3 +28,7 @@ void ElapsedTime::rst()
   elapsed_ = false;
   prevTimeMS_ = millis();
 }
+void ElapsedTime::setInterval(INTERVAL_TYPE intervalMS)
+{
+  intervalMS_ = intervalMS;
+}

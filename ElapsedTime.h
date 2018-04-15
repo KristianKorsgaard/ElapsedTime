@@ -15,6 +15,7 @@ public:
   bool chk();
   void ud();
   void rst();
+  void setInterval(INTERVAL_TYPE intervalMS);
 
 private:
 

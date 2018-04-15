@@ -1,4 +1,4 @@
 ElapsedTime	KEYWORD1
-hasElapsed	KEYWORD2
-update	KEYWORD2
-reset	KEYWORD2
+chk	KEYWORD2
+ud	KEYWORD2
+rst	KEYWORD2

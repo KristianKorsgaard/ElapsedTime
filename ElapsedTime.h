@@ -8,9 +8,9 @@ class ElapsedTime
 public:
   ElapsedTime(unsigned long intervalMS);
 
-  bool hasElapsed();
-  void update();
-  void reset();
+  bool chk();
+  void ud();
+  void rst();
 
 private:
 

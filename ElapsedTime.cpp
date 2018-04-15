@@ -1,17 +1,17 @@
 #include "ElapsedTime.h"
 
-ElapsedTime(unsigned long intervalMS)
+ElapsedTime::ElapsedTime(unsigned long intervalMS)
 : intervalMS_(intervalMS)
 {
-  reset();
+  rst();
 }
 
-bool hasElapsed()
+bool ElapsedTime::chk()
 {
-  update();
+  ud();
   if(elapsed_)
   {
-    reset();
+    rst();
     return true;
   }
   else
@@ -19,11 +19,11 @@ bool hasElapsed()
     return false;
   }
 }
-void update()
+void ElapsedTime::ud()
 {
-  if(!elapsed) elapsed_ = millis() - prevTimeMS_ > intervalMS_ ? true : false;
+  if(!elapsed_) elapsed_ = millis() - prevTimeMS_ > intervalMS_ ? true : false;
 }
-void reset()
+void ElapsedTime::rst()
 {
   elapsed_ = false;
   prevTimeMS_ = millis();

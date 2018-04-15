@@ -6,12 +6,12 @@ ElapsedTime::ElapsedTime(INTERVAL_TYPE intervalMS)
   rst();
 }
 
-bool ElapsedTime::chk(bool rst)
+bool ElapsedTime::chk(bool reset)
 {
   ud();
   if(elapsed_)
   {
-    if(rst) rst();
+    if(reset) rst();
     return true;
   }
   else

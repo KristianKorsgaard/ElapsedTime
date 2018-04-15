@@ -12,7 +12,7 @@ class ElapsedTime
 public:
   ElapsedTime(INTERVAL_TYPE intervalMS);
 
-  bool chk();
+  bool chk(bool rst = true);
   void ud();
   void rst();
   void setInterval(INTERVAL_TYPE intervalMS);

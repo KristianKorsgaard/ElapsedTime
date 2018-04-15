@@ -10,7 +10,7 @@
 class ElapsedTime
 {
 public:
-  ElapsedTime(INTERVAL_TYPE intervalMS);
+  ElapsedTime(INTERVAL_TYPE intervalMS = 0);
 
   bool chk(bool rst = true);
   void ud();

@@ -2,3 +2,4 @@ ElapsedTime	KEYWORD1
 chk	KEYWORD2
 ud	KEYWORD2
 rst	KEYWORD2
+setInterval	KEYWORD2

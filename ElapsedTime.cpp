@@ -1,6 +1,6 @@
 #include "ElapsedTime.h"
 
-ElapsedTime::ElapsedTime(unsigned long intervalMS)
+ElapsedTime::ElapsedTime(INTERVAL_TYPE intervalMS)
 : intervalMS_(intervalMS)
 {
   rst();

@@ -3,10 +3,14 @@
 
 #include "Arduino.h"
 
+#ifndef INTERVAL_TYPE
+  #define INTERVAL_TYPE unsigned int
+#endif
+
 class ElapsedTime
 {
 public:
-  ElapsedTime(unsigned long intervalMS);
+  ElapsedTime(INTERVAL_TYPE intervalMS);
 
   bool chk();
   void ud();
@@ -15,7 +19,8 @@ public:
 private:
 
   bool elapsed_;
-  unsigned long prevTimeMS_, intervalMS_;
+  unsigned long prevTimeMS_;
+  INTERVAL_TYPE intervalMS_;
 };
 
 #endif /* end of include guard: ELAPSEDTIME_H */

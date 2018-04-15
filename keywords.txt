@@ -1,0 +1,4 @@
+ElapsedTime	KEYWORD1
+hasElapsed	KEYWORD2
+update	KEYWORD2
+reset	KEYWORD2

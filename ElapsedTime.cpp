@@ -23,6 +23,10 @@ void ElapsedTime::ud()
 {
   if(!elapsed_) elapsed_ = millis() - prevTimeMS_ >= intervalMS_ ? true : false;
 }
+void ElapsedTime::ud(bool elapsed)
+{
+  elapsed_ = elapsed;
+}
 void ElapsedTime::rst()
 {
   elapsed_ = false;

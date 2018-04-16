@@ -14,6 +14,7 @@ public:
 
   bool chk(bool reset = true);
   void ud();
+  void ud(bool elapsed);
   void rst();
   void setInterval(INTERVAL_TYPE intervalMS);
 

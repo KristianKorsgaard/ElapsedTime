@@ -35,4 +35,5 @@ void ElapsedTime::rst()
 void ElapsedTime::setInterval(INTERVAL_TYPE intervalMS)
 {
   intervalMS_ = intervalMS;
+  rst();
 }
